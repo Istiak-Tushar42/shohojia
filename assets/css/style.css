@@ -199,10 +199,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .header .navbar {
     padding-top: 0;
   }
   .header .navbar .nav {
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -216,14 +220,13 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    position: absolute;
+    position: fixed;
     top: 88.344px;
-    right: 0;
     width: 230px;
+    right: -230px !important;
     height: calc(100vh - 88.344px);
     background: #f5f6f7;
     z-index: 12;
-    right: -100% !important;
     -webkit-box-shadow: -15px 0px 15px -15px rgba(0, 0, 0, 0.2);
             box-shadow: -15px 0px 15px -15px rgba(0, 0, 0, 0.2);
   }
